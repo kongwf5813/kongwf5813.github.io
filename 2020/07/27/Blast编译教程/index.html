@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next gemini use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="archives," />
+  <meta name="keywords" content="blast,ncbi,blastp," />
 
 
 
@@ -102,9 +102,11 @@
 <meta property="og:image" content="http://kongwf5813.github.io/2020/07/27/Blast%E7%BC%96%E8%AF%91%E6%95%99%E7%A8%8B/image-20200509115451309.png">
 <meta property="og:image" content="http://kongwf5813.github.io/2020/07/27/Blast%E7%BC%96%E8%AF%91%E6%95%99%E7%A8%8B/image-20200509115641583.png">
 <meta property="article:published_time" content="2020-07-27T05:46:38.000Z">
-<meta property="article:modified_time" content="2020-07-27T06:48:11.703Z">
+<meta property="article:modified_time" content="2020-07-28T04:52:19.348Z">
 <meta property="article:author" content="OKONG">
-<meta property="article:tag" content="archives">
+<meta property="article:tag" content="blast">
+<meta property="article:tag" content="ncbi">
+<meta property="article:tag" content="blastp">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://kongwf5813.github.io/2020/07/27/Blast%E7%BC%96%E8%AF%91%E6%95%99%E7%A8%8B/clip_image001.png">
 
@@ -114,7 +116,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -133,6 +135,8 @@
     }
   };
 </script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
 
 
 
@@ -227,6 +231,16 @@
         </li>
       
         
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
@@ -304,11 +318,45 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2020-07-28T12:52:19+08:00">
+                2020-07-28
+              </time>
             
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/blast/" itemprop="url" rel="index">
+                    <span itemprop="name">blast</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -316,7 +364,23 @@
 
           
           
+             <span id="/2020/07/27/Blast%E7%BC%96%E8%AF%91%E6%95%99%E7%A8%8B/" class="leancloud_visitors" data-flag-title="Blast编译教程">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i> 浏览量
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+            </span>
           
 
           
@@ -343,7 +407,7 @@
 <li><strong>python</strong> 2.7+ with <strong>pip</strong></li>
 <li>python package <strong><a href="https://github.com/nickdiego/compiledb" target="_blank" rel="noopener">compiledb</a></strong>(blast exectuables were built on GNU Make, when debugging the source code, header files(.h) need to be imported in CLion)</li>
 </ol>
-<h1 id="How-to-dowload-latest-ncbi-blast-source-code"><a href="#How-to-dowload-latest-ncbi-blast-source-code" class="headerlink" title="How to dowload latest ncbi blast+ source code?"></a>How to dowload latest ncbi blast+ source code?</h1><p>All blast+ exectuables are in <a href="ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/">ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/</a>, and download the source code of 2.10.0 through <a href="ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.9.0/ncbi-blast-2.9.0+-src.zip">ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.10.0/ncbi-blast-2.10.0+-src.zip</a></p>
+<h1 id="Where-to-dowload-latest-ncbi-blast-source-code"><a href="#Where-to-dowload-latest-ncbi-blast-source-code" class="headerlink" title="Where to dowload latest ncbi blast+ source code?"></a>Where to dowload latest ncbi blast+ source code?</h1><p>All blast+ exectuables are in <a href="ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/">ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/</a>, and download the source code of 2.10.0 through <a href="ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.9.0/ncbi-blast-2.9.0+-src.zip">ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.10.0/ncbi-blast-2.10.0+-src.zip</a></p>
 <h1 id="How-does-folders-look-like"><a href="#How-does-folders-look-like" class="headerlink" title="How does folders look like?"></a>How does folders look like?</h1><p>unzip the file, there are four folders(compilers, include, scripts and src) and two files(configure and configure.orig), like below:</p>
 <p><img src="/2020/07/27/Blast%E7%BC%96%E8%AF%91%E6%95%99%E7%A8%8B/clip_image001.png" alt="clip_image001"></p>
 <h1 id="How-to-build-debug-exectuables"><a href="#How-to-build-debug-exectuables" class="headerlink" title="How to build debug exectuables?"></a>How to build debug exectuables?</h1><h2 id="Step-1-generate-makefiles"><a href="#Step-1-generate-makefiles" class="headerlink" title="Step 1. generate makefiles"></a>Step 1. generate makefiles</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd ncbi-blast-2.10.0+-src/c++</span><br><span class="line"><span class="meta">#</span><span class="bash">Will generate makefiles <span class="keyword">in</span> DebugMT/build</span></span><br><span class="line">./configure --with-debug --with-projects=scripts/projects/blast/project.lst --with-build-root=DebugMT</span><br></pre></td></tr></table></figure>
@@ -415,12 +479,34 @@
     
 
     
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    OKONG
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://kongwf5813.github.io/2020/07/27/Blast%E7%BC%96%E8%AF%91%E6%95%99%E7%A8%8B/" title="Blast编译教程">http://kongwf5813.github.io/2020/07/27/Blast%E7%BC%96%E8%AF%91%E6%95%99%E7%A8%8B/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
 
     <footer class="post-footer">
       
         <div class="post-tags">
           
-            <a href="/tags/archives/" rel="tag"># archives</a>
+            <a href="/tags/blast/" rel="tag"># blast</a>
+          
+            <a href="/tags/ncbi/" rel="tag"># ncbi</a>
+          
+            <a href="/tags/blastp/" rel="tag"># blastp</a>
           
         </div>
       
@@ -509,15 +595,24 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
 
             
               
               
               <div class="site-state-item site-state-tags">
-                
-                  <span class="site-state-item-count">1</span>
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
-                
+                </a>
               </div>
             
 
@@ -525,6 +620,22 @@
 
           
 
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/kongwf5813" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-globe"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:kongwf5813@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-globe"></i>E-Mail</a>
+                  </span>
+                
+            </div>
           
 
           
@@ -548,7 +659,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Environment-and-tools"><span class="nav-number">1.</span> <span class="nav-text">Environment and tools</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#How-to-dowload-latest-ncbi-blast-source-code"><span class="nav-number">2.</span> <span class="nav-text">How to dowload latest ncbi blast+ source code?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#How-does-folders-look-like"><span class="nav-number">3.</span> <span class="nav-text">How does folders look like?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#How-to-build-debug-exectuables"><span class="nav-number">4.</span> <span class="nav-text">How to build debug exectuables?</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Step-1-generate-makefiles"><span class="nav-number">4.1.</span> <span class="nav-text">Step 1. generate makefiles</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Step-2-using-compiledb-generate-compile-commands-json"><span class="nav-number">4.2.</span> <span class="nav-text">Step 2. using compiledb generate compile_commands.json</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Step-3-use-make-to-compile-whole-source-code-at-first-time"><span class="nav-number">4.3.</span> <span class="nav-text">Step 3. use make to compile whole source code at first time</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Step-4-use-CLion-open-compile-commands-json-as-a-project"><span class="nav-number">4.4.</span> <span class="nav-text">Step 4. use CLion open compile_commands.json as a project,</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Step-5-Debug-in-CLion"><span class="nav-number">4.5.</span> <span class="nav-text">Step 5. Debug in CLion</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Environment-and-tools"><span class="nav-number">1.</span> <span class="nav-text">Environment and tools</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Where-to-dowload-latest-ncbi-blast-source-code"><span class="nav-number">2.</span> <span class="nav-text">Where to dowload latest ncbi blast+ source code?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#How-does-folders-look-like"><span class="nav-number">3.</span> <span class="nav-text">How does folders look like?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#How-to-build-debug-exectuables"><span class="nav-number">4.</span> <span class="nav-text">How to build debug exectuables?</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Step-1-generate-makefiles"><span class="nav-number">4.1.</span> <span class="nav-text">Step 1. generate makefiles</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Step-2-using-compiledb-generate-compile-commands-json"><span class="nav-number">4.2.</span> <span class="nav-text">Step 2. using compiledb generate compile_commands.json</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Step-3-use-make-to-compile-whole-source-code-at-first-time"><span class="nav-number">4.3.</span> <span class="nav-text">Step 3. use make to compile whole source code at first time</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Step-4-use-CLion-open-compile-commands-json-as-a-project"><span class="nav-number">4.4.</span> <span class="nav-text">Step 4. use CLion open compile_commands.json as a project,</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Step-5-Debug-in-CLion"><span class="nav-number">4.5.</span> <span class="nav-text">Step 5. Debug in CLion</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -586,12 +697,32 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
 
 
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      访客数
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      人
+    </span>
+  
+
+  
+    <span class="site-pv">
+      总访问量
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次
+    </span>
+  
+</div>
+
 
 
 
@@ -686,6 +817,13 @@
   
   
 
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
@@ -739,6 +877,113 @@
 
 
   
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("GqnyEwgKalKww8c1nIuK1S5g-gzGzoHsz", "0LPiwqaRKG9w3yeLfhYEcbC8");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
 
   
 
